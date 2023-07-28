@@ -44,7 +44,7 @@ const RegisterModal= () => {
 
     axios.post('/api/register', data)
     .then(() => {
-      toast.success('Success!');
+      toast.success('Registered!');
       registerModal.onClose();
       loginModal.onOpen();
     })
@@ -82,7 +82,7 @@ const RegisterModal= () => {
         register={register}
         errors={errors}
         required
-      /> 
+      />
       <Input
         id="password"
         label="Password"
@@ -102,7 +102,7 @@ const RegisterModal= () => {
         outline 
         label="Continue with Google"
         icon={FcGoogle}
-        onClick={() => signIn('google')}
+        onClick={() => signIn('google')} 
       />
       <Button 
         outline 
